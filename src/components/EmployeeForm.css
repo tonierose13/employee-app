@@ -1,0 +1,66 @@
+/* Layout matches the screenshot: narrow column, bold headings, simple rows */
+.employee-page {
+  max-width: 520px;
+  margin: 2rem auto;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+.employee-page h2 {
+  text-align: center;
+  margin: 1rem 0 1.25rem;
+  font-weight: 800;
+}
+
+.employee-form {
+  display: grid;
+  gap: 14px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 90px 1fr; /* label left, input right */
+  align-items: center;
+  gap: 12px;
+}
+
+.row span {
+  justify-self: start;
+}
+
+.employee-form input {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font: inherit;
+  outline: none;
+}
+
+.employee-form input:focus {
+  border-color: #2b6cb0;
+  box-shadow: 0 0 0 3px rgba(43,108,176,.2);
+}
+
+.primary {
+  justify-self: center;
+  width: 100px;
+  padding: 10px 0;
+  background: #0b69d3;
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.employee-list {
+  list-style: none;
+  padding-left: 0;
+  margin: .75rem 0 0;
+}
+
+.employee-list li {
+  padding: 8px 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
